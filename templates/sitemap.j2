@@ -1,0 +1,7 @@
+sitemap {{ binding }} label="{{ binding | title }}" {
+    Frame label="{{ binding | title }}" {
+{% for widget in widgets %}
+        {{ widget.type }} item={{ widget.item }} label="{{ widget.label }}"
+{% endfor %}
+    }
+}

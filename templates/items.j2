@@ -1,0 +1,4 @@
+// Generated example for the {{ binding }} binding.
+{% for item in items %}
+{{ item.type }} {{ item.name }} "{{ item.label }}" {% if item.icon %}<{{ item.icon }}> {% endif %}{% if item.group %}({{ item.group }}) {% endif %}{% if item.channel %}{channel="{{ item.channel }}"}{% endif %}
+{% endfor %}
